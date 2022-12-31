@@ -10,7 +10,7 @@ services:
     - MONGO_DB_USERNAME=root
     - MONGO_DB_PASSWORD=admin123
     ports:
-      - 8000:8080
+      - 6200:8080
     working_dir: /opt/app
     depends_on:
       - mongo
