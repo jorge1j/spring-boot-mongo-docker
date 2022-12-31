@@ -2,7 +2,7 @@ version: '3.1'
 
 services:
   springboot:
-    image: jorge1j/spring-boot-mongo:10 
+    image: jorge1j/bootspring-mongo:10 
     restart: always # This will be ignored if we deploy in docker swarm
     container_name: springboot
     environment:
