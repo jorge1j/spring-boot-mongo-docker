@@ -4,13 +4,13 @@ services:
   springboot:
     image: jorge1j/bootspring-mongo:10 
     restart: always # This will be ignored if we deploy in docker swarm
-    container_name: springboot
+    container_name: bootspring
     environment:
     - MONGO_DB_HOSTNAME=mongo
     - MONGO_DB_USERNAME=root
     - MONGO_DB_PASSWORD=admin123
     ports:
-      - 8080:8080
+      - 8000:8080
     working_dir: /opt/app
     depends_on:
       - mongo
@@ -35,7 +35,7 @@ services:
     restart: always
     
 volumes:
-  data:
+  data:10
     #external: true
     
 networks:
